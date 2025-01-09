@@ -32,7 +32,7 @@ li a:hover::after {
 }
 
 li a:hover {
-  color: #0C0A0B;
+  color:#c50e0f;
   scale: 1.1;
   transition: all 0.4s ease-in-out;
 }
@@ -432,6 +432,9 @@ footer {
   .navbar nav ul li a {
     display: block;
     width: 100%;
+  }
+  li a:hover {
+    color:#0C0A0B;
   }
   #check:checked ~ ul {
     left: 0;
