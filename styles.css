@@ -7,6 +7,7 @@
 li {
   list-style-type: none;
   padding: 14px;
+  display: block;
 }
 a {
   text-decoration: none;
@@ -15,7 +16,7 @@ a {
   font-weight: 600;
   position: relative;
 }
-li a::after {
+.navbar li a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -31,8 +32,9 @@ li a:hover::after {
 }
 
 li a:hover {
-  color: #c50e0f;
-  transition: color 0.4s ease-in-out;
+  color: #0C0A0B;
+  scale: 1.1;
+  transition: all 0.4s ease-in-out;
 }
 
 header {
@@ -407,13 +409,13 @@ footer {
   display: none;
 }
 .menu-btn:hover{
-  rotate: 360deg;
+  scale: 1.15;
 }
 @media (max-width: 800px) {
   .menu-btn {
     display: block;
   }
-  .navbar ul {
+  .navbar nav ul {
     width: 100%;
     display: block;
     position: fixed;
@@ -424,10 +426,10 @@ footer {
     text-align: center;
     padding: 20px;
   }
-  .navbar ul li {
+  .navbar nav ul li {
     display: block;
   }
-  .navbar ul li a {
+  .navbar nav ul li a {
     display: block;
     width: 100%;
   }
