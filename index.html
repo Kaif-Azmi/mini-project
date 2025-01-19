@@ -30,17 +30,18 @@
             <i class="fas fa-bars"></i>
           </label>
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#collection">COLLECTION</a></li>
-            <li><a href="#car-check">SERVICES</a></li>
-            <li><a href="#about">ABOUT US</a><li>
+            <li><a href="#home" class="underline">HOME</a></li>
+            <li><a href="#collection" class="underline">COLLECTION</a></li>
+            <li><a href="#car-check" class="underline">SERVICES</a></li>
+            <li><a href="#about" class="underline">ABOUT US</a><li>
+            <li><a href="register.html" id="signin-btn">Sign-in</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <div class="video-section" id="home">
-      <video autoplay muted loop>
-        <source src="videos/vid_1.mp4" type="video/mp4">
+      <video autoplay muted loop preload="none" loading="lazy">
+        <source src="videos/vid_3.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
       <div class="overlay"></div>
@@ -223,8 +224,8 @@
       
           <label for="comments">Additional Comments:</label>
           <textarea id="comments" name="comments" placeholder="Add any specific requests..."></textarea>
-      
-          <button type="submit">Book Now</button>
+      <div id="button-center">
+          <button type="submit">Book Now</button></div>
         </form>
       </section>
       
@@ -296,5 +297,6 @@
         <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

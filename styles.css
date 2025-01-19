@@ -4,19 +4,23 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 li {
   list-style-type: none;
-  padding: 14px;
+  padding: 15px;
   display: block;
+  transition: all 0.4s ease-in-out;
 }
 a {
   text-decoration: none;
   color: #ededed;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
 }
-.navbar li a::after {
+.underline::after {
   content: "";
   position: absolute;
   left: 0;
@@ -27,14 +31,13 @@ a {
   transition: width 0.4s ease-in-out;
 }
 
-li a:hover::after {
+.underline:hover::after {
   width: 100%;
 }
 
-li a:hover {
+li :hover {
   color:#c50e0f;
-  scale: 1.1;
-  transition: all 0.4s ease-in-out;
+  scale: 1.05;
 }
 
 header {
@@ -61,23 +64,20 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-/*
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
+#signin-btn {
+  padding: 8px 16px;
+  border: 2px solid #d32f2f;
+  background-color: transparent;
+  color: #d32f2f;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
-
-nav a:hover {
-  color: #f0a500;
-} */
-
+#signin-btn:hover {
+  background-color: #d32f2f;
+  color: white;
+}
 .video-section {
   width: 100%;
   height: 100vh;
@@ -411,102 +411,11 @@ footer {
 .menu-btn:hover{
   scale: 1.15;
 }
-@media (max-width: 800px) {
-  .menu-btn {
-    display: block;
-  }
-  .navbar nav ul {
-    width: 100%;
-    display: block;
-    position: fixed;
-    top: 60px;
-    left: -100%;
-    background-color: #c50e0f;
-    height: auto;
-    text-align: center;
-    padding: 20px;
-  }
-  .navbar nav ul li {
-    display: block;
-  }
-  .navbar nav ul li a {
-    display: block;
-    width: 100%;
-  }
-  li a:hover {
-    color:#0C0A0B;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  #check:checked ~ .menu-btn i:before {
-    content: "\f00d";
-    color: #c50e0f;
-  }
-  .service-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 50px;
-  }
-  .service-heading-text {
-    max-width: 95%;
-  }
-  .service-btn {
-    margin-top: 50px;
-  }
-  .newest-arrival-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .data-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding-left: 22%;
-  }
-  .data-outer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .data-outer i {
-    font-size: 30px;
-    padding: 20px;
-    transition: all 0.3s ease;
-  }
-
-  .data-outer i:hover {
-    transform: scale(1.2);
-    color: #ffffff;
-  }
-  .data-inner {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-  }
-  .data-inner span {
-    font-size: 35px;
-    font-weight: 700;
-    padding: 5px 0;
-  }
-  .data-inner h3 {
-    font-size: 25px;
-    font-weight: 600;
-    padding: 0 0 10px 0;
-    border-bottom: 2px solid #ededed;
-    margin-bottom: 5px;
-  }
-}
 
 .container {
   width: 90%;
   margin: 0 auto;
 }
-
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px;
@@ -602,20 +511,6 @@ footer {
 .card-button:hover {
   background-color: rgba(248, 1, 1, 0.2);
 }
-
-@media (max-width: 768px) {
-  .hero h2 {
-      font-size: 2rem;
-  }
-
-  .hero p {
-      font-size: 1rem;
-  }
-
-  .cta-button {
-      font-size: 0.9rem;
-  }
-}
 .service-form {
   width: 100%;
   background-color: #110e10;
@@ -630,7 +525,9 @@ footer {
   margin-bottom: 20px;
   font-size: 40px;
 }
-
+#button-center{
+  text-align: center;
+}
 .service-form input,
 .service-form select,
 .service-form textarea {
@@ -659,19 +556,6 @@ footer {
 .service-form button:hover {
   background-color: #f80101;
 }
-@media (max-width: 800px) {
-  .service-form {
-    padding: 15px;
-  }
-
-  .service-form h2 {
-    font-size: 20px;
-  }
-
-  .service-form button {
-    font-size: 14px;
-  }
-}
 #service {
   width: 100%;
   padding: 12px;
@@ -697,4 +581,120 @@ footer {
   outline: none;
   border-color: #f80101;
   box-shadow: 0 0 8px rgba(248, 1, 1, 0.5);
+}
+@media (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar nav ul {
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background-color: #c50e0f;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+  }
+  .navbar nav ul li {
+    padding: 15px;
+    display: block;
+  }
+  .navbar nav ul li a {
+    display: block;
+    width: 100%;
+  }
+  li a:hover {
+    color:#0C0A0B;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ .menu-btn i:before {
+    content: "\f00d";
+    color: #c50e0f;
+  }
+  #signin-btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  #signin-btn:hover {
+    color: white;
+  }
+  .service-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+  }
+  .service-heading-text {
+    max-width: 95%;
+  }
+  .service-btn {
+    margin-top: 50px;
+  }
+  .newest-arrival-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 22%;
+  }
+  .data-outer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .data-outer i {
+    font-size: 30px;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .data-outer i:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+  .data-inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .data-inner span {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 5px 0;
+  }
+  .data-inner h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #ededed;
+    margin-bottom: 5px;
+  }
+  .service-form {
+    padding: 15px;
+  }
+  .service-form h2 {
+    font-size: 20px;
+  }
+  .service-form button {
+    font-size: 14px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+}
+.hero p {
+    font-size: 1rem;
+}
+.cta-button {
+    font-size: 0.9rem;
+}
 }
