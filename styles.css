@@ -524,9 +524,8 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   background-color: #110e10;
-  padding: 20px;
+  padding: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  border: 1px solid #c50e0f;
 }
 
 .form-container {
@@ -575,10 +574,11 @@ footer {
 .service-form button {
   width: 120px;
   padding: 12px;
+  margin: 40px;
   background-color: #c50e0f;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
 }
