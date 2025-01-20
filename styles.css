@@ -111,8 +111,14 @@ header {
 }
 
 .video-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
+  color: #c50e0f;
+  text-shadow: 
+    3px 3px rgba(0, 0, 0, 0.5),
+    0 0  rgba(184, 152, 152, 0.8),
+    0 0 30px rgba(213, 199, 199, 0.6),
+    0 0 10px rgba(155, 137, 137, 0.4);  
 }
 
 .video-content p {
@@ -801,6 +807,7 @@ footer {
   }
 
   .illustration {
-    margin-top: 20px;
+    display: none;
   }
 }
+

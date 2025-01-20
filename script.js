@@ -72,3 +72,4 @@ form.addEventListener('submit', (e) => {
         toggleForm.innerHTML = "Don't have an account? <span>Signup</span>";
     }
 });
+
