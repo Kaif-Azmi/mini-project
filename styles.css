@@ -520,11 +520,29 @@ footer {
   background-color: rgba(248, 1, 1, 0.2);
 }
 .service-form {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: #110e10;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   border: 1px solid #c50e0f;
+}
+
+.form-container {
+  padding: 5vh;
+  display: flex;
+  width: 100%;
+}
+
+.form-image {
+  width: 40%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.form-content {
+  width: 60%;
 }
 
 .service-form h2 {
@@ -533,9 +551,11 @@ footer {
   margin-bottom: 20px;
   font-size: 40px;
 }
-#button-center{
+
+#button-center {
   text-align: center;
 }
+
 .service-form input,
 .service-form select,
 .service-form textarea {
@@ -547,9 +567,11 @@ footer {
   background-color: rgba(248, 1, 1, 0.2);
   color: #fff;
 }
-.service-form label{
+
+.service-form label {
   color: #ededed;
 }
+
 .service-form button {
   width: 120px;
   padding: 12px;
@@ -564,6 +586,7 @@ footer {
 .service-form button:hover {
   background-color: #f80101;
 }
+
 #service {
   width: 100%;
   padding: 12px;
@@ -576,20 +599,24 @@ footer {
   font-size: 16px;
   cursor: pointer;
 }
+
 #service option {
   background-color: #110e10;
   color: #fff;
   padding: 10px;
 }
+
 #service:hover {
   border-color: #f80101;
   background-color: rgba(248, 1, 1, 0.4);
 }
+
 #service:focus {
   outline: none;
   border-color: #f80101;
   box-shadow: 0 0 8px rgba(248, 1, 1, 0.5);
 }
+
 @media (max-width: 850px) {
   .menu-btn {
     display: block;
@@ -687,24 +714,68 @@ footer {
     border-bottom: 2px solid #ededed;
     margin-bottom: 5px;
   }
-  .service-form {
-    padding: 15px;
-  }
-  .service-form h2 {
-    font-size: 20px;
-  }
-  .service-form button {
-    font-size: 14px;
-  }
   .hero h2 {
     font-size: 2rem;
-}
-.hero p {
+  }
+  .hero p {
     font-size: 1rem;
-}
-.cta-button {
+  }
+  .cta-button {
     font-size: 0.9rem;
-}
+  }
+  .service-form {
+    padding: 15px;
+    display: block;
+    width: 100%;
+  }
+
+  .form-container {
+    display: block;
+  }
+
+  .form-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .form-content {
+    width: 100%;
+  }
+
+  .service-form h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .service-form input,
+  .service-form select,
+  .service-form textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .service-form button {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  #service {
+    font-size: 14px;
+  }
+
+  .service-form label {
+    font-size: 14px;
+  }
+
+  #button-center {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .service-form button:hover {
+    background-color: #f80101;
+  }
 }
 
 /* About Us Section */
