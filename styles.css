@@ -286,8 +286,8 @@ header {
 }
 .data-container {
   width: 100%;
-  background-color: #d70006;
-  color: #ededed;
+  background-color: #0a0a0c;
+  color: #c50e0f;
   height: auto;
   padding: 50px 20px;
   display: flex;
@@ -330,6 +330,8 @@ footer {
   background-color: #0a0a0c;
   color: #d8d2c2;
   padding: 40px 20px;
+  padding-top: 6vh;
+  border-top: 1px solid #c50e0f;
 }
 .footer-container {
   display: flex;
@@ -697,4 +699,108 @@ footer {
 .cta-button {
     font-size: 0.9rem;
 }
+}
+
+/* About Us Section */
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0a0a0c;
+}
+
+.content {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.content h1 {
+  text-align: center;
+  color: #c50e0f;
+  text-transform: uppercase;
+  font-size: 6vh;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.content ul li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #e6e6e6;
+  background-color: #110e10;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.content ul li:hover {
+  background-color: #4f0506;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content ul li .icon {
+  flex-shrink: 0;
+  font-size: 24px;
+  color: #c50e0f;
+}
+
+.content ul li strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.content ul li p {
+  margin: 0;
+  line-height: 1.5;
+  color: #e6e6e6;
+}
+
+
+.illustration {
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 5vh;
+  }
+
+  .content ul li {
+    justify-content: center;
+  }
+
+  .illustration {
+    margin-top: 20px;
+  }
 }
