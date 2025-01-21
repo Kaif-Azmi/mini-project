@@ -108,6 +108,7 @@ header {
   color: white;
   z-index: 2;
   text-align: center;
+  width: 80%;
 }
 
 .video-content h1 {
@@ -531,7 +532,7 @@ footer {
 .form-container {
   padding: 5vh;
   display: flex;
-  width: 100%;
+  width: 95%;
 }
 
 .form-image {
