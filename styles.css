@@ -553,9 +553,15 @@ footer {
 }
 
 #button-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
+#button-center button{
+  font-size: 1.1rem;
+  width: 150px;
+}
 .service-form input,
 .service-form select,
 .service-form textarea {
