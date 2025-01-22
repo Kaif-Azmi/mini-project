@@ -848,7 +848,7 @@ footer {
 }
 
 
-.illustration {
+.about-us .illustration {
   background: transparent;
   border-radius: 8px;
   overflow: hidden;
@@ -857,7 +857,7 @@ footer {
   align-items: center;
 }
 
-.illustration img {
+.about-us .illustration img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -878,7 +878,7 @@ footer {
     justify-content: center;
   }
 
-  .illustration {
+  .about-us .illustration {
     display: none;
   }
 }

@@ -31,7 +31,7 @@ body {
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
-h1 {
+.container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #c50e0f;
@@ -98,8 +98,8 @@ button:hover {
     font-weight: bold;
     cursor: pointer;
 }
-#toggle-form:hover {
-    color: #4f0506;
+#toggle-form span:hover {
+    color: #5a0708;
 }
 .illustration {
     flex: 1;
@@ -131,7 +131,7 @@ button:hover {
 .hidden {
     display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .container {
         flex-direction: column;
         width: 95%;
@@ -157,7 +157,4 @@ button:hover {
 }
 #other-login {
     color: rgb(255, 250, 232);
-}
-#other-login:hover {
-    color: #c50e0f;
 }
